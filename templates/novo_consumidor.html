@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Cadastro</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+      <div class="container">
+          <div class="container-login">
+              <div class="wrap-login">
+                  <form class="login-form">
+                      <span class="login-form-title">
+                          Faça seu cadastro de consumidor
+                      </span>
+
+                      <div class="wrap-input margin-top-35 margin-bottom-35">
+                          <input class="input-form" type="text" name="nome" autocomplete="off">
+                          <span class="focus-input-form" data-placeholder="Nome Completo"></span>
+                      </div>
+
+                      <div class="wrap-input margin-top-35 margin-bottom-35">
+                          <input class="input-form" type="cpf" name="cpf" autocomplete="off">
+                          <span class="focus-input-form" data-placeholder="CPF"></span>
+                      </div>
+
+                      <div class="wrap-input margin-top-35 margin-bottom-35">
+                          <input class="input-form" type="text" name="endereco" autocomplete="off">
+                          <span class="focus-input-form" data-placeholder="Endereço"></span>
+                      </div>
+
+                      <H1>Acesso</H1>
+                      <br>
+
+                      <div class="wrap-input margin-top-35 margin-bottom-35">
+                          <input class="input-form" type="text" name="user" autocomplete="off">
+                          <span class="focus-input-form" data-placeholder="Usuário"></span>
+                      </div>
+
+                      <div class="wrap-input margin-bottom-35">
+                          <input class="input-form" type="password" name="password">
+                          <span class="focus-input-form" data-placeholder="Senha"></span>
+                      </div>
+
+                      <div class="wrap-input margin-top-35 margin-bottom-35">
+                          <input class="input-form" type="email" name="email" autocomplete="off">
+                          <span class="focus-input-form" data-placeholder="E-mail"></span>
+                      </div>
+
+                      <div class="container-login-form-btn">
+                          <button class="login-form-btn">
+                              Login
+                          </button>
+                      </div>
+
+                  </form>
+              </div>
+              <img src="static/login.png" width="300" height="300" class="margin-left-50" />
+          </div>
+      </div>
+  </body>
+</html>

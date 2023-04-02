@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Organic Foods	</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+  	<div class="container">
+		<div class="container-login">
+			<div class="wrap-login">
+				<form class="login-form">
+					<span class="login-form-title">
+						Faça o login
+					</span>
+					<form>
+					<div class="form-field wrap-input margin-top-35 margin-bottom-35">
+						<input class="input-form" type="text" name="email" id="email" autocomplete="off" onchange="onChangeEmail()">
+						<span class="focus-input-form" data-placeholder="E-mail"></span>
+					</div>
+
+					<div class="form-field wrap-input margin-bottom-35">
+						<input class="input-form" type="password" name="password" id="password" onchange="onChangePassword()">
+						<span class="focus-input-form" data-placeholder="Senha"></span>
+					</div>
+
+                    <div class="container-login-form-btn">
+							<button type="button" class="login-form-btn consumer" id="login-button" onclick="login()">Entrar</button>
+					</div>
+     				<br>
+				</form>
+                    <div class="container-login-form-btn">
+						<a class="login-form-btn consumer"  href="{{ url_for('novo_consumidor') }}">
+                            Criar conta de Consumidor
+                        </a>
+					</div>
+
+                    <div class="container-login-form-btn">
+						<a class="login-form-btn seller" href="{{ url_for('novo_produtor') }}">
+                            Criar conta de Produtor
+                        </a>
+					</div>
+
+					<ul class="login-utils">
+						<li class="margin-bottom-8 margin-top-8">
+							<span class="text1">
+								Esqueceu sua
+							</span>
+
+							<a href="telas/recover.html" class="text2">
+								senha?
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<img src="static/login.png" width="300" height="300" class="margin-left-50" />
+		</div>
+	</div>
+
+
+  </body>
+</html>
